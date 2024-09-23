@@ -1,0 +1,123 @@
+/*
+Author: Raluca Ciobanu
+Student Id: c00289426
+File: styles.css
+Purpose: Styling for my CV
+*/
+
+/* Styling for the github and linkedin buttons/links */
+.buttonGroup 
+{
+    display: flex; /* Make the button group a flexbox too */
+    justify-content: space-between; /* Distribute buttons evenly */
+    gap: 10px; /* To put space between the elements in this group */
+}
+
+
+/* Styling for the anchor element in the button group */
+.buttonGroup a 
+{
+    text-decoration: none; /* This removes the blue underlines of the hyperlinks */
+    font-size: 18px;
+    color: black; /* style the text colour so it does not appear in default blue */
+}
+
+/* Styling for the profile picture */
+.mainpic 
+{
+    max-width: 150px;
+    max-height: 150px;
+    display: block;
+    margin: auto;
+}
+
+
+/* Style rules for my picture, name and contact information */
+.nameContactRow 
+{
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center; /* Center elements horizontally */
+    justify-content: center; /* Center elements vertically (within column) */    
+    width: 50%; /* Set the width to 50% of the container */
+    margin: 0 auto; /* Center the container horizontally */
+}
+  
+
+/* Sets the body background color and font style */
+body 
+{
+   background-color: #ECEFF4;
+   font-family: Helvetica, sans-serif;
+}
+
+/* Style rules for the navigation strip (jump to section) */
+nav 
+{
+   text-align: center;  /* Center the text */
+   margin: 0;           /* Remove the default margin */
+   padding: 10px;       /* Add 10 px of padding */
+}
+
+/* Style rules for nav list elements */
+nav ul li 
+{
+  display: inline-block;  /* Set the list to display as a block */
+  margin: 0 10px;         /* Add 0 top and bottom margin, and 10px left and right margin */
+}
+
+/* Style rules for nav anchor elements */
+nav ul li a 
+{
+  text-decoration: none;  /* Remove the default underline */
+  color: #333;          /* Set the link text color to black */
+  font-size: 16px;    
+}
+
+
+/* Style rules for main content that is organised into stacked vertical cards */
+.card-container 
+{
+  display: flex;            /* Make the container a flexbox */
+  flex-direction: column;   /* Stack the cards vertically */
+  justify-content: center;  /* Center the cards vertically */
+  align-items: center;      /* Center the cards */
+}
+  
+/* Style rules for each individual card */
+.card 
+{
+  width: 45%;   /* Set the width to 45% of the container */
+  margin-bottom: 20px;      /* Add some space between the cards */
+  border: 1px solid #ccc; /* Add a border */
+  border-radius: 5px;       /* Round the corners */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a shadow */
+}
+
+/* Style rules for the header of each card */
+.card-header 
+{
+  background-color: #e8c9f0;  /* Mauve color */
+  padding: 10px;                /* Add some padding */
+  text-align: center;           /* Center the text */
+  font-weight: bold;            /* Make the text bold */
+}
+  
+/* Style rules for the content of each card */
+.card-content 
+{
+  background-color: #f5f5f5;  /* Light grey color */
+  padding: 10px;                /* Add some padding */
+}
+
+/* Specify a transition rule */
+.transition 
+{
+  transition: all 500ms;  /* This transition will be applied to all properties that change as the element changes state */
+}
+ 
+/* Specify a hover rule for the cards */
+.card-hover:hover 
+{
+  transform: scale(1.05); /* Increase the card size by 5% */
+}
